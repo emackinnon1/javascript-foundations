@@ -3,26 +3,26 @@ var Wizard = require('../exercises/wizard');
 
 describe('Wizard', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Wizard);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var wizard = new Wizard({name: 'Jhun'});
     assert.equal(wizard.name, 'Jhun');
   });
 
-  it.skip('should have a beard by default', function() {
+  it('should have a beard by default', function() {
     var wizard = new Wizard({name: 'Jhun'});
     assert.equal(wizard.bearded, true);
   });
 
-  it.skip('should not always be bearded', function() {
+  it('should not always be bearded', function() {
     var wizard = new Wizard({name: 'Jhun', bearded: false});
     assert.equal(wizard.bearded, false)
   });
 
-  it.skip('should have root powers', function() {
+  it('should have root powers', function() {
     var wizard = new Wizard({name: 'Jhun', bearded: false});
     assert.equal(wizard.incantation('chown lumos'), 'CHOWN LUMOS');
   });
