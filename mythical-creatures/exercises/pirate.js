@@ -2,6 +2,7 @@ class Hobbit {
   constructor(name, job) {
     this.name = name;
     this.job = job;
+    this.castings = 0;
     if (!this.job) {
       this.job = 'Scallywag';
     }
